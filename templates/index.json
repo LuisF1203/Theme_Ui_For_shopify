@@ -5,7 +5,13 @@
             "settings": {
                 "featured_collection": "all"
             }
+        },
+        "banner-collection": {
+            "type": "banner-collection",
+            "settings": {
+                "banner_collection": "all"
+            }
         }
     },
-    "order": ["featured-collection"]
+    "order": ["featured-collection","banner-collection"]
 }
