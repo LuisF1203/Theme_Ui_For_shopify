@@ -1,5 +1,5 @@
-<div class="w-[100%] h-[40vh]">
-    <h1 class="absolute top[50%] left[50%] -translate-x-2/4 translate-y-[-21.5vh] text-white text-[4vw] font-[bold] shadow-[0_4px_8px_0_rgba(0,0,0,0.2),0_6px_20px_0_rgb(0_0_0_/_75%)] p-[1.5vw] rounded-2xl left-2/4 top-2/4 background: #0000004d">{{section.settings.title}}</h1>
+<div class="w-[100%] h-[40vh] relative">
+    <h1 class="absolute top[50%] left[50%] -translate-x-1/2 text-white text-[4vw] font-[bold] shadow-[0_4px_8px_0_rgba(0,0,0,0.2),0_6px_20px_0_rgb(0_0_0_/_75%)] p-[1.5vw] rounded-2xl left-2/4 top-2/4 background: #0000004d">{{section.settings.title}}</h1>
     <img class="w-[100%] h-[100%] object-cover" src="{{ section.settings.zeva_image_1 | img_url: 'master' }}" alt="bannerImg" />
 </div>
 
@@ -11,7 +11,7 @@
             {
                 "type": "text",
                 "id": "title",
-                "default": "Menu",
+                "default": "Banner Title",
                 "label": "Title"
             },
             {
