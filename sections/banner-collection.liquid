@@ -1,1 +1,20 @@
-<h1>AQUII VA A IR EL BANNER</h1>
+<img src="{{ section.settings.zeva_image_1 | img_url: 'master' }}" />
+
+
+{% schema %}
+    {
+        "name": "banner-collection",
+        "settings": [
+            {
+                "type": "image",
+                "id": "zeva_image_1.jpg",
+                "label": "Image"
+            }
+        ],
+        "presets": [
+            {
+                "name": "banner-collection"
+            }
+        ]
+    }
+    {% endschema %}
