@@ -871,6 +871,26 @@ video {
   height: 100vh;
 }
 
+.h-\[\] {
+  height: ;
+}
+
+.h-\[2vh\] {
+  height: 2vh;
+}
+
+.h-\[2\BF 40vh\] {
+  height: 2¿40vh;
+}
+
+.h-\[40vh\] {
+  height: 40vh;
+}
+
+.h-\[100\%\] {
+  height: 100%;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -906,6 +926,18 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[100\%\] {
+  width: 100%;
 }
 
 .max-w-2xl {

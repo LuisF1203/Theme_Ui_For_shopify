@@ -1,6 +1,8 @@
-<h1>AQUII VA A IR EL BANNER</h1>
-<h1>{{ section.settings.title }}</h1>
-<img src="{{ section.settings.zeva_image_1 | img_url: 'master' }}" />
+<div class="w-[100%] h-[40vh]">
+    <h1>{{section.settings.title}}</h1>
+    <img class="w-[100%] h-[100%] object-cover" src="{{ section.settings.zeva_image_1 | img_url: 'master' }}" alt="bannerImg" />
+</div>
+
 
 {% schema %}
     {
@@ -9,6 +11,7 @@
             {
                 "type": "text",
                 "id": "title",
+                "default": "Menu",
                 "label": "Title"
             },
             {
