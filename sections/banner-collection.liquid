@@ -1,0 +1,17 @@
+<div>
+    <img src="{{ settings.zeva_image_1 | img_url: 'master' | img_tag }}" alt="bannerImg">
+</div>
+
+
+{% schema %}
+{
+    "name": "Featured Collection",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "zeva_image_1.jpg",
+            "label": "Image"
+        }
+    ]
+}
+{% endschema %}

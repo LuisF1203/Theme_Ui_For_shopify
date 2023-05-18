@@ -6,23 +6,14 @@
     endif
 %}
 
-<div class="relative bg-white" x-data="{ mobileMenuOpen: false, searchBarOpen: false }" x-cloak>
+<div class="relative bg-white p-5" x-data="{ mobileMenuOpen: false, searchBarOpen: false }" x-cloak>
     <div class="mx-auto px-4 sm:px-6">
         <div class="flex justify-center items-center py-6 md:justify-start md:space-x-10">
             <!-- STORE NAME / STORE LOGO -->
             <div class="flex justify-start lg:flex-1 truncate">
                 <h1 class="text-xl font-bold truncate">{{ shop.name }}</h1>
-            </div>
-
-            <div class="-mr-2 -my-2 ml-3 md:hidden">
-                <button x-on:click="mobileMenuOpen = true" type="button" class="bg-white p-2 inline-flex items-center justify-center focus:outline-none">
-                    {% render 'icon-menu' %}
-                </button>
-            </div>
-            <!-- NAVIGATION MENU -->
-            <nav class="hidden md:flex space-x-10">
-
-
+                 <!-- NAVIGATION MENU -->
+            <nav class="hidden ml-20 md:flex space-x-10">
                 {% for link in main_menu_linklist %}
                     {% if link.links != blank %}
                         {% assign link_handle = link.handle | replace: '-', '_' %}
@@ -60,6 +51,14 @@
                     {% endif %}
                 {% endfor %}
             </nav>
+            </div>
+
+            <div class="-mr-2 -my-2 ml-3 md:hidden">
+                <button x-on:click="mobileMenuOpen = true" type="button" class="bg-white p-2 inline-flex items-center justify-center focus:outline-none">
+                    {% render 'icon-menu' %}
+                </button>
+            </div>
+           
             <!-- CART BUTTON / ACCOUNT LINKS IF ENABLED -->
             <div class="hidden md:flex items-center justify-end md:flex-1 space-x-5">
                 <button x-on:click="searchBarOpen = true" type="button" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900">
