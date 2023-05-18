@@ -1,5 +1,6 @@
 <h1>AQUII VA A IR EL BANNER</h1>
 <h1>{{ section.settings.title }}</h1>
+<img src="{{ section.settings.zeva_image_1 | img_url: 'master' }}" />
 
 {% schema %}
     {
@@ -9,12 +10,12 @@
                 "type": "text",
                 "id": "title",
                 "label": "Title"
-            }
-        ],
-        "presets": [
+            },
             {
-                "name": "banner collection"
+                "type": "image_picker",
+                "id": "zeva_image_1",
+                "label": "Image"
             }
         ]
     }
-    {% endschema %}
+{% endschema %}
