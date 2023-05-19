@@ -1,17 +1,25 @@
 {
     "sections": {
+        "banner-collection": {
+            "type": "banner-collection",
+            "settings": {
+                "banner_collection": "all"
+            }
+        },
         "featured-collection": {
             "type": "featured-collection",
             "settings": {
                 "featured_collection": "all"
             }
         },
-        "banner-collection": {
-            "type": "banner-collection",
+        "template-footer": {
+            "type": "template-footer",
             "settings": {
-                "banner_collection": "all"
+                "template-footer": "all"
             }
         }
+        
+
     },
-    "order": ["featured-collection","banner-collection"]
+    "order": ["banner-collection","featured-collection","template-footer"]
 }

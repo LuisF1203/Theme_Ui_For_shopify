@@ -1,0 +1,47 @@
+<footer>
+    <div>
+        <h1>{{ section.settings.title }}</h1>
+    </div>
+    <div>
+        <ul class="flex">
+            <li class="ml-4">Twitter</li>
+            <li class="ml-4">Facebook</li>
+            <li class="ml-4">Pinterest</li>
+            <li class="ml-4">Instagram</li>
+            <li class="ml-4">Tiktok</li>
+            <li class="ml-4">Tumblr</li>
+            <li class="ml-4">Snapchat</li>
+            <li class="ml-4">Youtube</li>
+            <li class="ml-4">Vimeo</li>
+        </ul>
+    </div>
+    <div>
+        <ul class="flex">
+            <li class="ml-4">Shop Pay</li>
+            <li class="ml-4">Visa</li>
+            <li class="ml-4">Mastercard</li>
+            <li class="ml-4">Apple pay</li>
+            <li class="ml-4">Google pay</li>
+            <li class="ml-4">Amex</li>
+        </ul>
+    </div>
+</footer>
+
+{% schema %}
+    {
+        "name": "Footer",
+        "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title",
+                "default": "Goodbye"
+            }
+        ],
+        "presets": [
+            {
+                "name": "Footer"
+            }
+        ]
+    }
+{% endschema %}
